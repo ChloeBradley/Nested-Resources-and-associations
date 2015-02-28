@@ -1,0 +1,13 @@
+This is the company show page
+<h1><%= @company.name %></h1>
+
+<hr>
+
+<% @company.events.each do |event| %>
+  <ul>
+    <li><%= event.name %></li>
+  </ul>
+<% end %>
+
+<%= link_to "create company event", new_company_event_path(@company) %>
+<%= link_to "All Companies", companies_path %>

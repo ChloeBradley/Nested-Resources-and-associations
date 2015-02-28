@@ -1,0 +1,20 @@
+Companies Index
+
+  <%= link_to 'New Company', new_company_path %>
+<br>
+  <% @companies.each do |company| %>
+<br>
+
+  <%= link_to company.name, company_path(company) %>
+
+<br>
+<% end %>
+
+<h1>All Events Here! </h1>
+<br>
+
+  <% @events.each do |list| %>
+  <%= list.name %>
+  <br>
+  <%= list.address %>
+  <% end %>

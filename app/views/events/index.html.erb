@@ -1,0 +1,9 @@
+This is the events index page
+
+<% @events.each do |event| %>
+  <%= link_to event.name, event_path(event) %>
+  <br>
+  <% event.company %>
+  <% end %>
+
+<%= link_to "New Event", new_event_company_path(@company) %>

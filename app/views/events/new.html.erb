@@ -1,0 +1,9 @@
+This should be the events new form
+
+<%= form_for [@company, @event] do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :address %>
+<%= f.text_field :address %>
+<%= f.submit %>
+<% end %>
